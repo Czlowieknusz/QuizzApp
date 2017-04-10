@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">QuizzApp</string>
+    <string name="startButtonText">Want to play a game?</string>
+
+    /* radioButton questions
+    <string-array name="radioQuestion1">
+        <item>At what postition plays Handball player Slawomir Szmal?</item>
+        <item>Goalkeeper</item> //correct answer
+        <item>Circle runner</item>
+        <item>Left winger</item>
+        <item>Goalkeeper</item>
+        <item>Centre</item>
+    </string-array>
+    <string-array name="radioQuestion2">
+        <item>How many protons has uran atom?</item>//question
+        <item>92</item>//correct answer
+        <item>92</item>
+        <item>378</item>
+        <item>152</item>
+        <item>89</item>
+    </string-array>
+    <string-array name="radioQuestion3">
+        <item>Which of the electromagnetic waves has the longest wavelength?</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Purple</item>
+    </string-array>
+    <string-array name="radioQuestion4">
+        <item>With which of the following enemies Spiderman did not fought in first cinematic trilogy?</item>
+        <item>Electro</item>
+        <item>Sandman</item>
+        <item>Venom</item>
+        <item>Electro</item>
+        <item>Doctor Octopus</item>
+    </string-array>
+
+    /* checkButton questions
+    <string name="multiChooseQuestions">You can choose multiple answers.</string>
+    <string name="submit">submit</string>
+    <string name="adnotationAboutMultipleAnswers">\nYou can choose multiple answers.</string>
+
+    <string-array name="checkButtonQuestion1">
+        <item>2*(2+2)=</item>
+        <item>8</item>
+        <item>2^3</item>
+        // answers
+        <item>2^3</item>
+        <item>8</item>
+        <item>2*(2+2)</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="checkButtonQuestion2">
+        <item>At what day season changes?</item>
+        <item>21 December</item>
+        <item>22 June</item>
+        // answers
+        <item>23 December</item>
+        <item>22 June</item>
+        <item>23 June</item>
+          <item>21 December</item>
+    </string-array>
+    <string-array name="checkButtonQuestion3">
+        <item>At what continent lays Russia?</item>
+        <item>Europe</item>
+        <item>Asia</item>
+        // answers
+        <item>Europe</item>
+        <item>Australia</item>
+        <item>Asia</item>
+        <item>Atlantyda</item>
+    </string-array>
+    <string-array name="checkButtonQuestion4">
+        <item>Name two songs made by System of a Down.</item>
+        <item>Chop Suey!</item>
+        <item>Atwa</item>
+        // answers
+        <item>Moonage Daydream</item>
+        <item>Atwa</item>
+        <item>Hooked on a feeling</item>
+        <item>Chop Suey!</item>
+    </string-array>
+
+    // editTextQuestions
+
+    <string-array name="editTextQuestion1">
+        <item>3*(2^2+3)</item>
+        <item>21</item>
+    </string-array>
+    <string-array name="editTextQuestion2">
+        <item>You have my sword, my bow, and my (…, &#8230;)?</item>
+        <item>axe</item>
+    </string-array>
+    <string-array name="editTextQuestion3">
+        <item>What I hate (running)?</item>
+        <item>running</item>
+    </string-array>
+    <string-array name="editTextQuestion4">
+        <item>Simbas father name is?</item>
+        <item>Mufasa</item>
+    </string-array>
+</resources>
