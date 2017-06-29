@@ -19,6 +19,7 @@ public class checkBoxWindow extends AppCompatActivity {
     private CheckBox answerBox1, answerBox2, answerBox3, answerBox4;
     private boolean submitted = false;
     int score, roundsPlayed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +60,7 @@ public class checkBoxWindow extends AppCompatActivity {
         score = savedInstanceState.getInt("Score");
         roundsPlayed = savedInstanceState.getInt("roundsPlayed");
     }
+
     /*
     method setting text for checkBoxes and question
      */
@@ -92,6 +94,7 @@ public class checkBoxWindow extends AppCompatActivity {
             questionsArray = getResources().getStringArray(R.array.checkButtonQuestion4);
         }
     }
+
     /*
         function called on Submit button clicked
         checks if answer is correct and if it was clicked before and adding point
@@ -104,20 +107,29 @@ public class checkBoxWindow extends AppCompatActivity {
                 answerBoxText3 = answerBox3.getText().toString(),
                 answerBoxText4 = answerBox4.getText().toString();
         int numberOfCorrectNumbers = 0;
+        int numberOfChoosenAnswers = 0;
         Context context = getApplicationContext();
-        if (answerBox1.isChecked() && (answerBoxText1.equals(questionsArray[1]) || answerBoxText1.equals(questionsArray[2]))) {
-            numberOfCorrectNumbers++;
+        if (answerBox1.isChecked()) {
+            numberOfChoosenAnswers++;
+            if (answerBoxText1.equals(questionsArray[1]) || answerBoxText1.equals(questionsArray[2]))
+                numberOfCorrectNumbers++;
         }
-        if (answerBox2.isChecked() && (answerBoxText2.equals(questionsArray[1]) || answerBoxText2.equals(questionsArray[2]))) {
-            numberOfCorrectNumbers++;
+        if (answerBox2.isChecked()) {
+            numberOfChoosenAnswers++;
+            if (answerBoxText2.equals(questionsArray[1]) || answerBoxText2.equals(questionsArray[2]))
+                numberOfCorrectNumbers++;
         }
-        if (answerBox3.isChecked() && (answerBoxText3.equals(questionsArray[1]) || answerBoxText3.equals(questionsArray[2]))) {
-            numberOfCorrectNumbers++;
+        if (answerBox3.isChecked()) {
+            numberOfChoosenAnswers++;
+            if (answerBoxText3.equals(questionsArray[1]) || answerBoxText3.equals(questionsArray[2]))
+                numberOfCorrectNumbers++;
         }
-        if (answerBox4.isChecked() && (answerBoxText4.equals(questionsArray[1]) || answerBoxText4.equals(questionsArray[2]))) {
-            numberOfCorrectNumbers++;
+        if (answerBox4.isChecked()) {
+            numberOfChoosenAnswers++;
+            if ((answerBoxText4.equals(questionsArray[1]) || answerBoxText4.equals(questionsArray[2])))
+                numberOfCorrectNumbers++;
         }
-        boolean areAnswersCorrect = numberOfCorrectNumbers == 2;
+        boolean areAnswersCorrect = numberOfCorrectNumbers == 2 && numberOfChoosenAnswers == 2;
         Log.v("checkBoxWindow", "warunek " + areAnswersCorrect);
         if (!submitted && areAnswersCorrect) {
             score++;
